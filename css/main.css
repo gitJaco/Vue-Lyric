@@ -1,0 +1,90 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+    
+}
+
+/* Main  */
+.main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px black;
+    min-height: 50vh;
+
+}
+/* Header  */
+
+.header {
+    padding: 5rem;
+    background-color: black;
+    background-image: url('../img/martin-engel-KLFB1AEPLwA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    gap: .3rem;
+   
+}
+
+.search {
+    flex-grow: 1;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+/* Content  */
+
+.content {
+    padding-top: 2rem;
+    
+}
+
+.songs {
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.song:nth-child(even) {
+    background-color: lightgray;
+
+}
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+
+
+}
+.song:hover {
+    background-color: gray;
+    color: white;
+   
+}
+
+.show {
+    background-color: goldenrod;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
